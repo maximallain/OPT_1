@@ -26,7 +26,7 @@ def dict_intersection(segments_h,segments_v):
                 position_word_v = int(intersec_h) - int(sv_position_h)
                 res_temp[keyh] = position_word_h
                 res_temp[keyv] = position_word_v
-                res[str(i)]=res_temp
+                res["x"+str(i)]=res_temp
                 i += 1
                 res_temp={}
             elif len(intersection) == 0 :
