@@ -33,8 +33,9 @@ def dict_intersection(segments_h,segments_v):
                 pass
             else :
                 raise IndexError("Intersection's Problem")
-    print(res)
     return res
+
+
 
 def position(position_id) :
     temp = re.split('x|\.', position_id)
