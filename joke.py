@@ -1,0 +1,2 @@
+def joke() :
+    print("C'est un belge, un américain et un français qui entrent dans un bar.\nL'américain passe sa commande :\n -Je voudrais un whisky, seevooplay.\nLe barman lui sert son whisky. L'américain le boit d'un trait. Ensuite le français passe sa commande :\n- Un rouge pour moi.\nLe barman lui sert son gros rouge qui tache. Le français le boit d'un trait.\nPuis le belge passe sa commande :\n - Est-ce que je saurais avoir une bière, une fois?.\nLe barman :\n - Avec ou sans frite?")

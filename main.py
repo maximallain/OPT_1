@@ -6,16 +6,15 @@ from dict_vocabulary import dict_vocabulary
 from domain_var import domain_var_segment, domain_var_letter
 from print_res import print_res
 from constraints import constraints
-import string
+from joke import joke
 
-"""
-1. On récupère les segments h et v
-2. On récupère les mots de vocabulaire du fichier
-3. On définit le domainew
-4. Création du programme
-"""
+print("///////// DM1 - OPTIMISATION /////////\n")
 
-doc = str(2)
+num = 0
+while(num != 1 and num != 2):
+    num = int(input("Number of crossword ? (1 or 2)\n"))
+
+doc = str(num)
 filecross = "Data/crossword"+doc+".txt"
 fileword = "Data/words"+doc+".txt"
 
@@ -57,3 +56,6 @@ result = P.solve()
 
 print_res(segments_h, segments_v, result, filecross)
 
+answer = input("Do you want a joke to end this demo ? (y/n)\n").lower()
+if answer == "y" :
+    joke()
