@@ -1,4 +1,7 @@
-def domain_var(segments_h, segments_v, dict_words):
+import string
+
+
+def domain_var_segment(segments_h, segments_v, dict_words):
     """
     :param segments_h: horizontal segments
     :param segments_v: vertical segments
@@ -13,4 +16,11 @@ def domain_var(segments_h, segments_v, dict_words):
     for element_vertical in segments_v.keys() :
         taille = segments_v[element_vertical].__len__()
         var[element_vertical] = set(dict_words[str(taille)])
+
+    return var
+
+def domain_var_letter(dict_intersection, var):
+    alphabet = list(string.ascii_lowercase)
+    for key in dict_intersection.keys():
+        var[key] = set(alphabet)
     return var

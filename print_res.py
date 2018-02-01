@@ -38,5 +38,6 @@ def print_res(segments_h, segments_v, result, filecross):
 
         str_final += str_temp + "\n"
 
-    return str_final
+    print("Final result :\n")
+    print(str_final)
 
